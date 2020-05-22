@@ -2,17 +2,13 @@
 
 Application Name: {app-name}
 
-Student Name: {student-name}
+Student Name: Stanka Svecova
 
-## {app-name}
-
-{short explanation of your application}
+Description:
+Description: A user can register to the portal and access user account with following functionalities: Update & delete personal information Create, post, edit & delete an article Upload a video-link (not the video itself)
 
 ## Screenshots
 
-![screen shot](docs/screen_cap.png)
+![screen shot](docs/homepage_proposal.png)
 
 ## Features:
-
-- {feature 1}
-- {feature 2}
