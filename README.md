@@ -1,6 +1,6 @@
 # REDI Sprint 2020 Frontend Development 2, Final Project
 
-Application Name: {app-name}
+Application Name: a user account & registration process for a teen-content website, with video upload feature available.
 
 Student Name: Stanka Svecova
 
@@ -12,3 +12,8 @@ Description: A user can register to the portal and access user account with foll
 ![screen shot](docs/homepage_proposal.png)
 
 ## Features:
+Registration
+User-account page, containing:
+- update & delete personal information
+- create, post, edit & delete an article
+- video upload feature, creating video-block feed
