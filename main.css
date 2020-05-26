@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    font-size: 20px;
+}
+.container-fluid {
+    height: 90px;
+}
+
+.bg-1 {
+    background-color: darkgrey;
+}
+.navbar-default {
+  height: auto;
+}
+.navbar {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    background-color: darkgrey;
+}
+
+.navbar-nav li a:hover {
+    color: orangered !important;
+    font-weight: bold;
+}
+
+.btn-group-vertical btn btn-primary {
+    background-color: darkgrey;
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px;
+}
+#account {
+    background-color: orangered;
+    font-size:20px;
+    width: 100px;
+}
+#myNavbar {
+    height: 50px;
+    width: 100px;
+}
+#travelbtn {
+    background-color: orangered;
+    margin: 0;
+    width: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#musicbtn {
+  background-color: orangered;
+  margin: 0;
+  width: 100px;
+}
+#booksbtn  {
+    background-color: grey;
+    margin: 0;
+    width: 100px;
+    border: 0;
+}
+#techbtn {
+    background-color: orangered;
+    margin: 0;
+    width: 100px;
+}
+#sportbtn {
+    background-color: grey;
+    margin: 0;
+    width: 100px;
+    border: 0;
+}
+#engineerbtn {
+    background-color: grey;
+    margin: 0;
+    width: 100px;
+    border: 0;
+}
+#humourbtn {
+    background-color: orangered;
+    margin: 0;
+    width: 100px;
+}
+#artbtn {
+    background-color: orangered;
+    margin: 0;
+    width: 100px;
+}
+#foodbtn {
+    background-color: grey;
+    margin: 0;
+    width: 100px;
+    border: 0;
+}
+.sr-only {
+  font-size: xx-small;
+}
+.img-rounded {
+  margin: 1px;
+}
+a {
+    color: #aaaaaa;
+    transition: all ease-in-out 200ms;
+  }
+a:hover {
+    color: #333333;
+    text-decoration: none;
+  }
+.btn btn-danger {
+    background-color: orangered;
+}
+.adverts {
+    height: 600px;
+}
+.thumbnail {
+    height:230px;
+}
