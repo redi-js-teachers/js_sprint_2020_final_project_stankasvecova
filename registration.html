@@ -2,43 +2,30 @@
 <html lang="en">
 
 <head>
-<title>good.teens</title>
+    <title>good.teens</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="registration.css">
     <script src="reg2.js"></script>
-
 </head>
 
 <body>
-    <h1 class="regTitle"><img src="logo1.png" class=".img-rounded" style="width:200px" alt="goodteens"></h1>
+    <h1 class="regTitle"><img src="logo1.png" class="gtlogo" alt="goodteens"></h1>
     <h1 class="regTitle"> Register a new account </h1>
     <form name="RegForm" action="process.php" method="post" autocomplete="off">
         <div class="row">
             <div class="col-sm-3">
             </div>
             <div class="col-sm-3">
-            <label for="validationCustom01">First name</label>
-            <input type="text" size=65 name="firstname" class="form-control" id="validationCustom01" placeholder="albert" required>
+                <label for="validationCustom01">First name</label>
+                <input type="text" size=65 name="firstname" class="form-control" id="validationCustom01"
+                    placeholder="albert" required>
             </div>
             <div class="col-sm-3">
-            <label for="validationCustom02">Last name</label>
-            <input type="text" size=65 name="lastname" class="form-control" id="validationCustom02" placeholder="einstein" required>
-            </div>
-            <div class="col-sm-3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-3">
-            <label for="validationCustom03">Your age in years</label>
-            <input type="number" size=65 name="yearuser" class="form-control" id="validationCustom03" placeholder="type number" required>
-            </div>
-            <div class="col-sm-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" size=65 name="lastname" class="form-control" id="validationCustom02"
+                    placeholder="einstein" required>
             </div>
             <div class="col-sm-3">
             </div>
@@ -47,11 +34,25 @@
             <div class="col-sm-3">
             </div>
             <div class="col-sm-3">
-            <label for="validationCustom04">City</label>
-            <input type="text" size=40 name="city" class="form-control" id="validationCustom04" placeholder="munich" required>
+                <label for="validationCustom03">Your age in years</label>
+                <input type="number" size=65 name="yearuser" class="form-control" id="validationCustom03"
+                    placeholder="type number" required>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <label for="validationCustom04">City</label>
+                <input type="text" size=40 name="city" class="form-control" id="validationCustom04" placeholder="munich"
+                    required>
             </div>
             <div class="col-sm-3 autocomplete">
-            <label for="validationCustom05">Country</label>
+                <label for="validationCustom05">Country</label>
                 <input class="form-control" id="myInput" type="text" name="country" placeholder="Country" required>
             </div>
             <div class="col-sm-3">
@@ -61,12 +62,14 @@
             <div class="col-sm-3">
             </div>
             <div class="col-sm-3">
-            <label for="validationCustom06">Email address:</label>
-            <input type="email" size=65 name="email" class="form-control" id="validationCustom06" placeholder="type email address" required>
+                <label for="validationCustom06">Email address:</label>
+                <input type="email" size=65 name="email" class="form-control" id="validationCustom06"
+                    placeholder="type email address" required>
             </div>
             <div class="col-sm-3">
-            <label for="validationCustom07">Confirm email address:</label>
-            <input type="email" size=65 name="confirmemail" class="form-control" id="validationCustom07" value="retype email address" required>
+                <label for="validationCustom07">Confirm email address:</label>
+                <input type="email" size=65 name="confirmemail" class="form-control" id="validationCustom07"
+                    value="retype email address" required>
             </div>
             <div class="col-sm-3">
             </div>
@@ -75,30 +78,30 @@
             <div class="col-sm-3">
             </div>
             <div class="col-sm-3">
-            <label for="validationCustom01">Password:</label>
-            <input type="password" size=65 name="passworduser" class="form-control" id="validationCustom08" placeholder="type password" required>
-            <div class="form-check">
-                <input name="TAC" class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">I agree with Terms & Conditions</label>
-      </label>
-    </div>
-            <div class="col-sm-3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-3">
-            </div>
-            <p></p>
-            <div class="col-sm-3">
-                <button class="btn btn-danger" type="submit">Create an account</button></div>
-            </div>
+                <label for="validationCustom01">Password:</label>
+                <input type="password" size=65 name="passworduser" class="form-control" id="validationCustom08"
+                    placeholder="type password" required>
+                <div class="form-check">
+                    <input name="TAC" class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">I agree with Terms & Conditions</label>
+                    </label>
+                </div>
                 <div class="col-sm-3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-3">
+                </div>
+                <p></p>
+                <div class="col-sm-3">
+                    <button class="btn btn-danger" type="submit">Create an account</button></div>
+            </div>
+            <div class="col-sm-3">
             </div>
         </div>
     </form>
-
 </body>
 
 </html>
