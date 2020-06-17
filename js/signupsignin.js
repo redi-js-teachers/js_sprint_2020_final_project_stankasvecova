@@ -1,5 +1,6 @@
 const signUpEl = document.getElementById("signUpBtn");
 const signInEl = document.getElementById("signInBtn");
+const signOutEl = document.getElementById("signOutBtn")
 
 function signUp() {
   const email = document.getElementById('email').value;
@@ -27,18 +28,21 @@ function signIn() {
     }
   });
 }
-firebase.auth().onAuthStateChanged(function (user) {
-  if (user) {
-    // User is signed in.
-    var displayName = user.displayName;
-    var email = user.email;
-    var emailVerified = user.emailVerified;
-    var photoURL = user.photoURL;
-    var isAnonymous = user.isAnonymous;
-    var uid = user.uid;
-    var providerData = user.providerData;
-  };
-});
+
+function giveStatusChange() {
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      // User is signed in.
+      var displayName = user.displayName;
+      var email = user.email;
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+    };
+  });
+}
 
 function signedInPage() {
   document.body.innerHTML = `    
@@ -143,26 +147,38 @@ function signedInPage() {
 </form>
 <script src="createprofile.js"></script>`};
 
-const provider = new firebase.auth.GoogleAuthProvider();
 
-firebase.auth().signInWithPopup(provider).then(function (result) {
-  // This gives you a Google Access Token. You can use it to access the Google API.
-  var token = result.credential.accessToken;
-  // The signed-in user info.
-  var user = result.user;
-  // ...
-}).catch(function (error) {
-  // Handle Errors here.
-  var errorCode = error.code;
-  var errorMessage = error.message;
-  // The email of the user's account used.
-  var email = error.email;
-  // The firebase.auth.AuthCredential type that was used.
-  var credential = error.credential;
-  // ...
-});
+function googleSignIn() {
+  const provider = new firebase.auth.GoogleAuthProvider();
 
+  firebase.auth().signInWithPopup(provider).then(function (result) {
+    // This gives a Google Access Token. You can use it to access the Google API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    // ...
+  }).catch(function (error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+}
+
+function signOut() {
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    debugger;
+    }).catch(function(error) {
+    // An error happened.
+    });
+}
 signUpEl.addEventListener("click", signUp);
 signInEl.addEventListener("click", signIn);
+signOutEl.addEventListener("click", signOut);
 
 

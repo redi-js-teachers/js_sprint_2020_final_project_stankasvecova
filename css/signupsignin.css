@@ -13,6 +13,10 @@ h2 {
     font-weight: bold;
     margin: 0;
 }
+h3 {
+    margin: 10px;
+    font-weight: bold;
+}
 p {
     font-size: 14px;
     font-weight: 100;
@@ -35,12 +39,12 @@ a {
 .container {
     background: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2em;
     align-content: flex-start;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
-    width: 768px;
+    width: 820px;
     max-width: 100%;
     padding: 30px;
 }
@@ -72,17 +76,24 @@ a {
     grid-column-end: 2;
     border: 2px solid orangered;
     border-radius: 10px;
-    padding-bottom: 10px;
 }  
 .column2 {
     display: grid;
     height: 100%;
+    width: auto;
     grid-column-start: 2;
     grid-column-end: 3;
     border: 2px solid orangered;
     border-radius: 10px;
     padding-bottom: 10px;
 }  
+.column3 {
+    display: grid;
+    height: 100%;
+    width: 90px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+} 
 .icons {
 	display: flex;
 	width: 30px;
@@ -124,27 +135,26 @@ button {
     letter-spacing: 1px;
     transition: transform 80ms ease-in;
     width: 150px;
-    margin: auto;
+    margin: 10px;
 }
 .form-check-label {
-    text-align: justify;
+    text-align: left;
     word-break: break-all;
-    font-weight: bold;
     font-size: small;
+    font-weight: lighter;
 }
 #gridCheck {
     text-align: left;
 }
-button:active {
-    transform: scale(.95);
+#signOutBtn {
+    margin: 300px 0 0 10px;
+    width: 80px;
+    height: auto;
+    text-align: justify;
+    font-size: small;
+    padding: 5px;
 }
-
-button:focus {
-    outline: none;
-}
-
-button.ghost {
-    background: transparent;
-    background-color: #fff;
-    border-color: orangered
+#signOutText {
+    font-size: medium;
+    font-weight: bold;
 }
