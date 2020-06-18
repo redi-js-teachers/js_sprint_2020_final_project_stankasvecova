@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/signupsignin.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="createprofile.css">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                 <input type="email" placeholder="Email" id="email" />
                 <input type="password" placeholder="Password" id="password" />
                 <input name="TAC" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">I agree with <a href="">Terms & Condit.</a></label>
+                <label class="form-check-label" for="gridCheck" required>I agree with <a href="">Terms & Condit.</a></label>
                 </label>
                 <button id="signUpBtn">Sign Up</button>
             </form>
@@ -62,13 +63,7 @@
                 <button id="signInBtn">Sign In</button>
             </form>
         </div>
-        <div class="column3">
-            <form action="#">
-                <button id="signOutBtn">Sign Out</button>
-            </form>
-        </div>
     </div>
-
     <script src="../js/signupsignin.js"></script>
 </body>
 
