@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/signupsignin.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="createprofile.css">
 </head>
 
 <body>
@@ -17,20 +16,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
-    <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyBbuvg-wCgz30zyD4zETU0HiHiC5_FulWc",
-            authDomain: "good-teens.firebaseapp.com",
-            databaseURL: "https://good-teens.firebaseio.com",
-            projectId: "good-teens",
-            storageBucket: "good-teens.appspot.com",
-            messagingSenderId: "260739514487",
-            appId: "1:260739514487:web:8197a36e539f090f2ec672",
-            measurementId: "G-0WBRPFKT5Z"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
+    <script src="../js/setupFirebase.js"></script>
     <div class="container">
         <div class="column1">
             <form action="#">
@@ -44,7 +30,8 @@
                 <input type="email" placeholder="Email" id="email" />
                 <input type="password" placeholder="Password" id="password" />
                 <input name="TAC" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck" required>I agree with <a href="">Terms & Condit.</a></label>
+                <label class="form-check-label" for="gridCheck" required>I agree with <a href="">Terms &
+                        Condit.</a></label>
                 </label>
                 <button id="signUpBtn">Sign Up</button>
             </form>
