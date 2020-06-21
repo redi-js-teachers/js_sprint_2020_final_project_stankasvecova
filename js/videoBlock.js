@@ -1,52 +1,58 @@
 const videos = [
     {
-        title: "The youngest Beatles tribute band",
-        frameborder: 0,
-        accelerometer: true,
-        encryptedMedia: true,
-        gyroscope: true,
-        pictureInPicture: true,
-        fullscreen: true,
-        src: source[i],
-        rating: 10,
+        title: "Miss Bee, a teen singer with a beautiful voice: High hopes",
+        id: "LqYIKYEnX7Y"
     },
     {
-        title: "Teen Millionaires - successful businesses run by teens",
-        frameborder: 0,
-        accelerometer: true,
-        encryptedMedia: true,
-        gyroscope: true,
-        pictureInPicture: true,
-        fullscreen: true,
-        src: source[i],
-        rating: 20,
+        title: "16 yr old Riya Karumanchi, CEO of SmartCane",
+        id: "UzPKgDmOqsg"
+    },
+    {
+        title: "12 yr old Isabel Sieh codes since 10: Girls will code",
+        id: "YQDXpu3t7Og"
+    },
+    {
+        title: "12 yr old Thomas Suarez: teaching kids create apps",
+        id: "Fkd9TWUtFm0"
+    },
+    {
+        title: "Teen successful businesses: a documentary",
+        id: "1YCGM7FiCGg"
+    },
+    {
+        title: "Mo, 14 yr old CEO of bows making company",
+        id: "6D5bUoRI720"
+    },
+    {
+        title: "Santiago Gonzalez, the next Steve Jobs",
+        id: "DBXZWB_dNsw"
     },
 ]
 
-let source = ["https://www.youtube.com/embed/Uq-FOOQ1TpE", "https://www.youtube.com/embed/93mctUlDofw", "https://www.youtube.com/embed/1YCGM7FiCGg", "https://www.youtube.com/embed/vPukHebsQeQ", "https://www.youtube.com/embed/h11u3vtcpaY"]
-
-function displayVideos(videos) {
-    for (let i = 0; i < video.length; i++) {
-        let videosEl = document.getElementById("video");
-        videos.src = source[i].value;
-        let videosEl = document.createElement("div");
-        source.setAttribute('src', source[i]);
-        videosEl.appendChild(source);
-        videos.play();
-        videos.innerHTML = `
-      <p> <h3><b>${videos.title}</b></h3></p>
-      <p> ${rateVideos(videos.rating)} </p>
-      `
-    }
+function videoEl(videos) {
+    const videoWrapperEl = document.createElement('div');
+    videoWrapperEl.innerHTML = `
+    <div class="thumbnail">
+    <div class="videosTitles">${videos.title}</div>
+    <iframe
+        type="text/html"
+        width="220"
+        height="160"
+        src="https://www.youtube.com/embed/${videos.id}?autoplay=0&origin=http://localhost"
+        frameborder="0"
+    ></iframe>
+    <div class="iconBlock">
+        <button id="medalBtn" class="gridIcons" onClick="javascript:rateVideos()">
+        <img class="gridIcons" id="medal" src="../docs/medal-first-place.gif"></button>
+        <button id="pooBtn" class="gridIcons" onClick="javascript:rateVideos()">
+        <img class="gridIcons" id="poo" src="../docs/poo.gif"></button>
+    </div>
+    </div>`;
+    return videoWrapperEl;
 }
 
-displayVideos(videos);
+const videoListEl = document.querySelector('.gridVideo');
 
-function rateVideos(rating) {
-    const medalEl = document.getElementById("medal"),
-    const pooEl = document.getElementById("poo"),
-
-};
-
-
-
+videos.forEach(videos => {
+    videoListEl.appendChild(videoEl(videos));
+});
