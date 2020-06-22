@@ -48,7 +48,15 @@ a {
     max-width: 100%;
     padding: 30px;
 }
-
+.regTitle {
+	text-align: center;
+	color: black;
+	margin: 8px;
+	font-size: large;
+} 
+.gtlogo {
+	width:200px;
+}
 .column1 form {
     background: #fff;
     display: grid;

@@ -16,6 +16,8 @@ function signUp() {
 };
 
 function signIn() {
+  const email = document.getElementById('registeredEmail').value;
+  const password = document.getElementById('registeredPassword').value;
   firebase.auth().signInWithEmailAndPassword(email, password).then(function() {}).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;
