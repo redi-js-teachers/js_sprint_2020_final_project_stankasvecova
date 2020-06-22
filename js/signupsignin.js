@@ -50,3 +50,7 @@ function googleSignIn() {
 
 signUpEl.addEventListener("click", signUp);
 signInEl.addEventListener("click", signIn);
+
+document.getElementById('signup-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+ });
