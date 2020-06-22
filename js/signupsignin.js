@@ -14,7 +14,7 @@ function signUp() {
     }
   });
 };
-
+/*
 function signIn() {
   firebase.auth().signInWithEmailAndPassword(email, password).then(function () {}).catch(function (error) {
     var errorCode = error.code;
@@ -47,10 +47,14 @@ function googleSignIn() {
     // ...
   });
 }
-
+*/
 signUpEl.addEventListener("click", signUp);
+<<<<<<< Updated upstream
 signInEl.addEventListener("click", signIn);
 
 document.getElementById('signup-form').addEventListener('submit', function(e) {
   e.preventDefault();
  });
+=======
+/*signInEl.addEventListener("click", signIn);*/
+>>>>>>> Stashed changes

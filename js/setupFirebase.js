@@ -10,8 +10,11 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+/*
 
 firebase.auth().onAuthStateChanged(function (user) {
+<<<<<<< Updated upstream
   if (user) {
     // User is signed in.
     var displayName = user.displayName;
@@ -26,3 +29,23 @@ firebase.auth().onAuthStateChanged(function (user) {
     if (!window.location.href.includes('signupsignin')) { window.location.href = 'signupsignin.html'; }
   }
 });
+=======
+    if (user) {
+      // User is signed in.
+      var displayName = user.displayName;
+      var email = user.email;
+      var emailVerified = user.emailVerified;
+      var photoURL = user.photoURL;
+      var isAnonymous = user.isAnonymous;
+      var uid = user.uid;
+      var providerData = user.providerData;
+      if (!window.location.href.includes('personalProfile')) {
+        window.location.href = 'personalProfile.html';
+      }
+    } else {
+      if (!window.location.href.includes('signupsignin')) {
+        window.location.href = 'signupsignin.html';
+      }
+    }
+  }); */
+>>>>>>> Stashed changes
