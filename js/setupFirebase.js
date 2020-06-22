@@ -22,8 +22,8 @@ firebase.auth().onAuthStateChanged(function (user) {
     var isAnonymous = user.isAnonymous;
     var uid = user.uid;
     var providerData = user.providerData;
-    if (!window.location.href.includes('personalProfile')) { window.location.href = 'personalProfile.html'; }
+    if (!window.location.href.includes('personalProfile.html')) {window.location.href = 'personalProfile.html';}
   } else {
-    if (!window.location.href.includes('signupsignin')) { window.location.href = 'signupsignin.html'; }
+    if (!window.location.href.includes('signupsignin')) {window.location.href = 'signupsignin.html';}
   }
 });

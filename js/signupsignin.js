@@ -4,7 +4,7 @@ const signInEl = document.getElementById("signInBtn");
 function signUp() {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {}).catch(function (error) {
+  firebase.auth().createUserWithEmailAndPassword(email, password).then(function() {}).catch(function (error) {
     const errorCode = error.code;
     const errorMessage = error.message;
     if (errorCode == 'auth/weak-password') {
@@ -16,7 +16,7 @@ function signUp() {
 };
 
 function signIn() {
-  firebase.auth().signInWithEmailAndPassword(email, password).then(function () {}).catch(function (error) {
+  firebase.auth().signInWithEmailAndPassword(email, password).then(function() {}).catch(function (error) {
     var errorCode = error.code;
     var errorMessage = error.message;
     if (errorCode === 'auth/wrong-password') {
@@ -52,5 +52,9 @@ signUpEl.addEventListener("click", signUp);
 signInEl.addEventListener("click", signIn);
 
 document.getElementById('signup-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+ });
+
+document.getElementById('signin-form').addEventListener('submit', function(e) {
   e.preventDefault();
  });
