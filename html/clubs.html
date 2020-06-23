@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>good.teens</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/d0e3324dfc.js"></script>
+    <link rel="stylesheet" href="clubs.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="logo1.png" class="gtlogo" alt="goodteens">
+            <div class="loginBlock">
+                <button class="login" onclick="location.href='signupsignin.html'">Sign Up / Sign In</button>
+            </div>
+        </div>
+        <div class="topnav">
+            <ul class="topnav list">
+                <li><a href="#" class="topnavBtn">hobbies</a></li>
+                <li><a href="#" class="topnavBtn">shop</a></li>
+                <li><a href="#" class="topnavBtn">jobs</a></li>
+                <li><a href="#" class="topnavBtn">clubs</a></li>
+                <li><a href="#" class="topnavBtn">chat</a></li>
+            </ul>
+            <ul class="gridBtn">
+                <li><a target="_blank" href=""><img class="gridBtn"
+                            src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMi4xIDI2Ij48dGl0bGU+bG9nby10d2l0dGVyLWdseXBoLTMyPC90aXRsZT48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMzIsNi4xYTExLjg0LDExLjg0LDAsMCwxLTMuOCwxLDYuNDYsNi40NiwwLDAsMCwyLjktMy42LDEyLjYxLDEyLjYxLDAsMCwxLTQuMiwxLjZBNi40NCw2LjQ0LDAsMCwwLDIyLjIsM2E2LjU5LDYuNTksMCwwLDAtNi42LDYuNiw3LjcyLDcuNzIsMCwwLDAsLjIsMS41QTE4Ljg1LDE4Ljg1LDAsMCwxLDIuMiw0LjJhNi4yOSw2LjI5LDAsMCwwLS45LDMuM0E2Ljc3LDYuNzcsMCwwLDAsNC4yLDEzYTYuMTEsNi4xMSwwLDAsMS0zLS44di4xYTYuNTQsNi41NCwwLDAsMCw1LjMsNi40LDkuODUsOS44NSwwLDAsMS0xLjcuMiw0Ljg3LDQuODcsMCwwLDEtMS4yLS4xLDYuNjgsNi42OCwwLDAsMCw2LjEsNC42LDEyLjkyLDEyLjkyLDAsMCwxLTguMiwyLjgsOC42LDguNiwwLDAsMS0xLjYtLjFBMTkuODUsMTkuODUsMCwwLDAsMTAuMSwyOWMxMi4xLDAsMTguNy0xMCwxOC43LTE4LjdWOS41QTE3LjIyLDE3LjIyLDAsMCwwLDMyLDYuMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMSAtMykiLz48L3N2Zz4="
+                            alt=""></a></li>
+                <li><a target="_blank" href=""><img class="gridBtn"
+                            src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMy45MyAzMCI+PHRpdGxlPnNvY2lhbF9mYWNlYm9vazwvdGl0bGU+PHBhdGggZmlsbD0iIzAwMCIgZD0iTTMsMzBIOS4xOVYxNWg0LjJsLjU0LTUuM0g5LjE5VjYuNmExLjI3LDEuMjcsMCwwLDEsMS4wOS0xLjQzaDMuNThWMEg5LjI1QzQuMTMsMCwzLDMuODMsMyw2LjI5VjkuNzFIMFYxNUgzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPjwvc3ZnPg=="
+                            alt=""></a></li>
+                <li><a target="_blank" href=""><img class="gridBtn"
+                            src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMS45MSAzMiI+PHRpdGxlPnNvY2lhbF9saW5rZWRpbjwvdGl0bGU+PHBhdGggZmlsbD0iIzAwMCIgZD0iTTMwLjcsMEgxLjNBMS4zMiwxLjMyLDAsMCwwLDAsMS4zVjMwLjZBMS4zNSwxLjM1LDAsMCwwLDEuMywzMkgzMC42YTEuMzIsMS4zMiwwLDAsMCwxLjMtMS4zVjEuM0ExLjE4LDEuMTgsMCwwLDAsMzAuNywwWk05LjUsMjcuM0g0LjdWMTJIOS41Wk03LjEsOS45QTIuOCwyLjgsMCwxLDEsOS45LDcuMSwyLjgsMi44LDAsMCwxLDcuMSw5LjlaTTI3LjMsMjcuM0gyMi42VjE5LjljMC0xLjgsMC00LTIuNS00cy0yLjgsMS45LTIuOCwzLjl2Ny42SDEyLjZWMTJIMTd2Mi4xaC4xYTUsNSwwLDAsMSw0LjUtMi41YzQuOCwwLDUuNywzLjIsNS43LDcuM1oiLz48L3N2Zz4K"
+                            alt=""></a></li>
+                </li>
+            </ul>
+        </div>
+        <div class="gridContent">
+            <div class="gridCards">
+                <div class="thumbnail">
+                    <div class="cardTitle">
+                        <a href="#">ONE MONTH - ONE BOOK - ONE ZOOM MEETING</a>
+                    </div>
+                    <div class="cardPicture">
+                        <img src="bookreader.jpg" class="cardImages">
+                    </div>
+                    <div class="clubDetails">
+                        You will read 10 fantastic books in one school year and meet like-minded teen-friends, who also
+                        love well written stories.
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="cardTitle">
+                        <a href="#">CODE CLUB: LEARN TOGETHER</a>
+                    </div>
+                    <div class="cardPicture">
+                        <img src="code.jpg" class="cardImages2">
+                    </div>
+                    <div class="clubDetails">
+                        You will come up with crazy or useful ideas on how to use technology and create your own
+                        projects,
+                        using various languges and talking through it with your friends.
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="cardTitle">
+                        <a href="#">SEWING CLUB OF CREATIVITY</a>
+                    </div>
+                    <div class="cardPicture">
+                        <img src="sewingmaschine.jpg" class="cardImages">
+                    </div>
+                    <div class="clubDetails">
+                        All teen sewing maschines, join us! Inspire one another and show off your latest creations!
+                        Beware -
+                        you will be challenged to try new things!
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="cardTitle">
+                        <a href="#">DRAWING MAKES US HAPPY (AND COOL)</a>
+                    </div>
+                    <div class="cardPicture">
+                        <img src="drawing.jpg" class="cardImages">
+                    </div>
+                    <div class="clubDetails">
+                        You will be challenged (and supported) in drawing your best pieces so far, and showing them off
+                        to
+                        your friends who love drawing too!
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="cardTitle">
+
+                    </div>
+                    <div class="cardPicture">
+                        <img src="" class="cardImages">
+                    </div>
+                    <div class="clubDetails">
+
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <div class="cardTitle">
+
+                    </div>
+                    <div class="cardPicture">
+                        <img src="" class="cardImages">
+                    </div>
+                    <div class="clubDetails">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <script src="clubs.js"></script>
+</body>
+
+</html>
