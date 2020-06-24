@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>good.teens</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/personalProfile.css">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    <script src="../js/setupFirebase.js"></script>
+    <header>
+        <h1 class="regTitle"><img src="../docs/logo1.png" class="gtlogo" alt="goodteens"></h1>
+        <h1 class="regTitle">Your profile page</h1>
+    </header>
+    <hr>
+
+    <form id="personalProfileForm" autocomplete="off">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <label for="photo">Upload your photo</label>
+                <input id="image" type="file" name="profilePhoto" capture>
+            </div>
+            <div class="col-sm-3">
+                <img class="card" src="../docs/monster.jpg" alt="profile picture">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <label for="firstname">First name</label>
+                <input type="text" size=65 name="firstname" class="form-control" id="firstname" placeholder="albert">
+            </div>
+            <div class="col-sm-3">
+                <label for="city">City</label>
+                <input type="text" size=40 name="city" class="form-control" id="city" placeholder="munich">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <label for="lastname">Last name</label>
+                <input type="text" size=65 name="lastname" class="form-control" id="lastname" placeholder="einstein">
+            </div>
+            <div class="col-sm-3 autocomplete">
+                <label for="validationCustom05">Country</label>
+                <input class="form-control" id="country" type="text" name="country" placeholder="Country">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+
+            <div class="col-sm-3">
+                <label for="agecheck">Your age</label>
+                <input type="number" size=65 name="yearuser" class="form-control" id="agecheck"
+                    placeholder="type number">
+            </div>
+            <div class="col-sm-3">
+                <label for="socialProfile">Your profile elsewhere</label>
+                <input type="text" size=65 name="socialProfile" class="form-control" id="socialProfile"
+                    placeholder="your youtube/facebook/instagram">
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+
+            <div class="col-sm-3">
+                <label for="yourWebsite">What will you be when you grow up?</label>
+                <input type="text" size=65 name="futurePlans" class="form-control" id="futurePlans"
+                    placeholder="both silly dreams or good plans are fine here">
+            </div>
+            <div class="col-sm-3">
+                <label for="yourWebsite">Your website</label>
+                <input type="text" size=65 name="yourWebsite" class="form-control" id="yourWebsite"
+                    placeholder="your cool website">
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+                <button class="btn" type="submit">Save your profile</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="signOutBtn" onClick="signOut()">Sign Out</button>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+
+        </div>
+    </form>
+   
+    <script src="../js/personalProfile.js"></script>
+</body>
+
+</html>

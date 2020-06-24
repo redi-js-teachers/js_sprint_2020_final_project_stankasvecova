@@ -1,0 +1,45 @@
+.regTitle {
+	text-align: center;
+	color: black;
+	margin: 8px;
+	font-size: large;
+} 
+.btn {
+	width: 130px;
+	background-color: #E94E1B;
+	border-radius: 0.5em;
+	height: 30px;
+	font-size: x-small;
+	font-weight: bold;
+}
+.autocomplete {
+	position: relative;
+	display: inline-block;
+}
+.gtlogo {
+	width:200px;
+}
+#submit {
+	background-color:#E94E1B;
+}
+.form-control {
+	width: 300px;
+	height: 30px;
+	margin-bottom: 10px;
+	margin-top: -10px;
+	font-size: x-small;
+}
+.card {
+	width: 60px;
+	height: 60px;
+	border-radius: 20px;
+}
+#signOutBtn {
+	background-color: white;
+	border: 2px solid #E94E1B;
+	border-radius: 0.5em;
+	width: 130px;
+	height: 30px;
+	font-size: x-small;
+	font-weight: bold;
+}

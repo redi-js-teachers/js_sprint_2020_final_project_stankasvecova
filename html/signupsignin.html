@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>good.teens</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/signupsignin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    <script src="../js/setupFirebase.js"></script>
+    <h1 class="regTitle"><img src="../docs/logo1.png" class="gtlogo" alt="goodteens"></h1>
+    <div class="container">
+        <div class="column1">
+            <form id="signup-form">
+                <h2>Create Account</h2>
+                <div class="social-container">
+                    <button class="icon-button" onclick="googleSignIn()">G+  </button>
+                    <button class="icon-button" onclick="facebookSignIn()">F  </button>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" id="email" />
+                <input type="password" placeholder="Password" id="password" />
+                <input name="TAC" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck" required>I agree with <a href="">Terms</a></label>
+                <button id="signUpBtn">Sign Up</button>
+            </form>
+        </div>
+        <div class="column2">
+            <form id="signin-form">
+                <h2>Sign in</h2>
+                <div class="social-container">
+                    <button class="icon-button" onclick="googleSignIn()">G+</button>
+                    <button class="icon-button" onclick="facebookSignIn()">F  </button>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" id="registeredEmail" />
+                <input type="password" placeholder="Password" id="registeredPassword" />
+                <a href="#">Forgot your password?</a>
+                <button id="signInBtn">Sign In</button>
+            </form>
+        </div>
+        <script src="../js/signupsignin.js"></script>
+</body>
+
+</html>
