@@ -17,22 +17,21 @@
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
     <script src="../js/setupFirebase.js"></script>
-    <h1 class="regTitle"><img src="logo1.png" class="gtlogo" alt="goodteens"></h1>
+    <h1 class="regTitle"><img src="../docs/logo1.png" class="gtlogo" alt="goodteens"></h1>
     <div class="container">
         <div class="column1">
             <form id="signup-form">
                 <h2>Create Account</h2>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <button class="icon-button" onclick="googleSignIn()">G+  </button>
+                    <button class="icon-button" onclick="facebookSignIn()">F  </button>
                 </div>
                 <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" id="email" />
                 <input type="password" placeholder="Password" id="password" />
                 <input name="TAC" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck" required>I agree with <a href="">Terms &
-                        Condit.</a></label>
+                <label class="form-check-label" for="gridCheck" required>I agree with <a href="">Terms</a></label>
                 <button id="signUpBtn">Sign Up</button>
             </form>
         </div>
@@ -40,8 +39,8 @@
             <form id="signin-form">
                 <h2>Sign in</h2>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <button class="icon-button" onclick="googleSignIn()">G+</button>
+                    <button class="icon-button" onclick="facebookSignIn()">F  </button>
                 </div>
                 <span>or use your account</span>
                 <input type="email" placeholder="Email" id="registeredEmail" />

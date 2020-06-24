@@ -28,25 +28,32 @@ function signIn() {
     }
   });
 }
-
 function googleSignIn() {
   const provider = new firebase.auth.GoogleAuthProvider();
-
   firebase.auth().signInWithPopup(provider).then(function (result) {
-    // This gives a Google Access Token. You can use it to access the Google API.
+    console.log("Successful Gmail Sign-in!");
     var token = result.credential.accessToken;
-    // The signed-in user info.
     var user = result.user;
-    // ...
   }).catch(function (error) {
-    // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    // The email of the user's account used.
     var email = error.email;
-    // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
-    // ...
+    console.log("Gmail Sign-in failed")
+  });
+}
+function facebookSignIn() {
+  var provider = new firebase.auth.FacebookAuthProvider();
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    console.log("Successful Gmail Sign-in!");
+    var token = result.credential.accessToken;
+    var user = result.user;
+  }).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    var email = error.email;
+    var credential = error.credential;
+    console.log("Facebook Sign-in failed")
   });
 }
 
@@ -56,7 +63,6 @@ signInEl.addEventListener("click", signIn);
 document.getElementById('signup-form').addEventListener('submit', function(e) {
   e.preventDefault();
  });
-
 document.getElementById('signin-form').addEventListener('submit', function(e) {
   e.preventDefault();
  });

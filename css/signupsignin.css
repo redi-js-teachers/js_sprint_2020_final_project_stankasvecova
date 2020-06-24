@@ -35,11 +35,16 @@ a {
     text-decoration: none;
     margin: 15px 0;
 }
-
+input {
+    margin: 2px 0;
+    background: #eee;
+    border-radius: 2px;
+    border: none;
+}
 .container {
     background: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 2em;
     align-content: flex-start;
     border-radius: 10px;
@@ -79,63 +84,46 @@ a {
 }
 .column1 {
     display: grid;
+    width: 250px;
     height: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
-    border: 2px solid orangered;
+    border: 2px solid #e94e1b;
+    border-right: 2px solid #e94e1b;
     border-radius: 10px;
+    margin: 10px;
 }  
 .column2 {
     display: grid;
+    width: 250px;
     height: 100%;
-    width: auto;
     grid-column-start: 2;
     grid-column-end: 3;
-    border: 2px solid orangered;
+    border: 2px solid #e94e1b;
+    border-right: 2px solid #e94e1b;
     border-radius: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    margin: 10px;
 }  
-.column3 {
-    display: grid;
-    height: 100%;
-    width: 90px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-} 
 .icons {
 	display: flex;
 	width: 30px;
 	height: 30px;
 	letter-spacing: 15px;
-	align-items: center;
+    align-items: center;
+    margin: 0;
+    border: none;
 }
 .social-container {
-    margin: 20px 0;
-}
-.social-container a {
-    border: 1px solid #ddd;
-    border-radius: 50%;
+    margin: 0;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 40px;
-    width: 40px;
+    width: 50px;
+    padding: 0;
+    text-align: left;
 }
-
-.form-container input {
-    background: #eee;
-    border-radius: 10px;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-}
-
 button {
     border-radius: 10px;
-    border: 1px solid orangered;
-    background-color: orangered;
+    background-color: #e94e1b;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -144,6 +132,7 @@ button {
     transition: transform 80ms ease-in;
     width: 150px;
     margin: 10px;
+    border: none;
 }
 .form-check-label {
     text-align: left;
@@ -165,4 +154,32 @@ button {
 #signOutText {
     font-size: medium;
     font-weight: bold;
+}
+.social1 {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    border: 1px solid #ddd;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+}
+.social2 {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    border: 1px solid #ddd;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+}
+.icon-button {
+    color: #3B5998;
+    background-color: transparent;
+    font-size: medium;
+    padding: 1px;
 }
